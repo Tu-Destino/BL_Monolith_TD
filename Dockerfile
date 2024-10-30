@@ -1,4 +1,4 @@
-FROM eclipse-temurin:18.0.2_13-jdk-alpine
+FROM amazoncorretto:18-alpine-jdk
 
 COPY target/BL_Monolith_TD-0.0.1-SNAPSHOT.jar appli.jar
 
