@@ -24,15 +24,7 @@ import org.springframework.context.annotation.Configuration;
         )
        //, security = @SecurityRequirement(name = "basicAuth")
 )
-
 public class OpenApiConfiguration {
 
-        @Bean
-        public OpenAPI customOpenAPI() {
-                return new OpenAPI()
-                        .components(new Components()
-                                .addSecuritySchemes("basicAuth", new SecurityScheme()
-                                        .type(SecurityScheme.Type.HTTP)
-                                        .scheme("basic")));
-        }
+
 }

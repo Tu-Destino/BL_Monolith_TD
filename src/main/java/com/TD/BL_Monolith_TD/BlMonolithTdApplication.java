@@ -17,13 +17,13 @@ public class BlMonolithTdApplication {
 		System.out.println("░░░╚═╝░░░░╚═════╝░  ╚═════╝░╚══════╝╚═════╝░░░░╚═╝░░░╚═╝╚═╝░░╚══╝░╚════╝░");
 
 		System.out.println("|----------------------------------------------------------------------------|");
-		System.out.println("🚀 **Compilación Exitosa del Proyecto 'Tu Destino'** 🚀\n\n" +
-				"¡Hola a todos! 🎉\n\n" +
-				"Me complace anunciar que hemos completado con éxito la compilación de nuestra aplicación 'Tu Destino'.\n\n" +
-				"Gracias a todos por su esfuerzo y dedicación.\n\n" +
-				"¡Sigamos adelante con esta energía positiva! 🌟\n\n" +
-				"Atentamente,\n" +
-				"Equipo de Desarrollo Tu Destino  ");
+		System.out.println("🚀 **Successful Compilation of the 'Tu Destino' Project** 🚀\n\n" +
+				"Hello everyone! 🎉\n\n" +
+				"I am pleased to announce that we have successfully completed the compilation of our 'Tu Destino' application.\n\n" +
+				"Thank you all for your effort and dedication.\n\n" +
+				"Let's continue with this positive energy! 🌟\n\n" +
+				"Sincerely,\n" +
+				"Tu Destino Development Team");
 		System.out.println("|----------------------------------------------------------------------------|");
 
 	}
