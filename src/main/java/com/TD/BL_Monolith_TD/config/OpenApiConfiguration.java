@@ -21,8 +21,8 @@ import org.springframework.context.annotation.Configuration;
                         email = "support@tudestino.com",
                         url = "https://tu-destino-v3-0-wed.vercel.app/"
                 )
-        ),
-        security = @SecurityRequirement(name = "basicAuth")
+        )
+       //, security = @SecurityRequirement(name = "basicAuth")
 )
 
 public class OpenApiConfiguration {
