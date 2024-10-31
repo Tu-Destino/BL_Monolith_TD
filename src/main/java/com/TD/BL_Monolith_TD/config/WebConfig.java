@@ -26,13 +26,5 @@ public class WebConfig implements WebMvcConfigurer {
         };
     }
 
-    @Bean
-    public WebMvcConfigurer customConfigurer() {
-        return new WebMvcConfigurer() {
-            @Override
-            public void configureMessageConverters(List<HttpMessageConverter<?>> converters) {
-                converters.add(new MappingJackson2HttpMessageConverter());
-            }
-        };
-    }
+
 }

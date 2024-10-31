@@ -124,12 +124,8 @@
 			<artifactId>springdoc-openapi-ui</artifactId>
 			<version>1.5.13</version>
 		</dependency>
-		<!-- SpringDoc OpenAPI Security -->
-		<dependency>
-			<groupId>org.springdoc</groupId>
-			<artifactId>springdoc-openapi-security</artifactId>
-			<version>1.5.13</version>
-		</dependency>
+
+
 
 	</dependencies>
 	<build>
