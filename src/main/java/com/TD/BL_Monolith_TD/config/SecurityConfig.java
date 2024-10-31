@@ -38,9 +38,6 @@ public class SecurityConfig {
                         .build()
         );
     }
-    @Bean(name = "mvcHandlerMappingIntrospector")
-    public HandlerMappingIntrospector mvcHandlerMappingIntrospector() {
-        return new HandlerMappingIntrospector();
-    }
+
 
 }
