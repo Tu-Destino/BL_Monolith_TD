@@ -36,6 +36,9 @@ public class WebConfig implements WebMvcConfigurer {
         };
     }
 
-
+    @Bean
+    public FormattingConversionService mvcConversionService() {
+        return new FormattingConversionService();
+    }
 
 }
