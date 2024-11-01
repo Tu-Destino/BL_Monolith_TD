@@ -29,7 +29,7 @@ public class Place {
     private String schedule;
     @Column(length = 100,nullable = false)
     private String address;
-    @Column(length = 100)
+    @Column(length = 500)
     private String link_address;
     @Column(length = 1000)
     private String vr;

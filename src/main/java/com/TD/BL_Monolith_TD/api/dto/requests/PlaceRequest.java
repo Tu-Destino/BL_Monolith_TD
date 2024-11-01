@@ -36,7 +36,7 @@ public class PlaceRequest {
     @NotBlank(message = "This attribute is required")
     private String address;
 
-    @Size(max = 100, message = "You exceeded the number of characters allowed (100)")
+    @Size(max = 500, message = "You exceeded the number of characters allowed (100)")
     private String link_address;
 
     @Size(max = 1000, message = "You exceeded the number of characters allowed (1000)")

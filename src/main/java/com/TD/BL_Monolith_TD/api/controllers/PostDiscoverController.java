@@ -1,5 +1,6 @@
 package com.TD.BL_Monolith_TD.api.controllers;
 
+import com.TD.BL_Monolith_TD.api.dto.requests.LabelsRequest;
 import com.TD.BL_Monolith_TD.api.dto.requests.PostDiscoverRequest;
 import com.TD.BL_Monolith_TD.api.dto.response.PostDiscoverResponse;
 import com.TD.BL_Monolith_TD.infrastructure.abstract_services.IPostDiscoverService;
@@ -150,4 +151,19 @@ public class PostDiscoverController {
     ){
         return  ResponseEntity.ok(this.postDiscoverService.update(id,postDiscoverRequest));
     }
+
+    @GetMapping(path = "/tags")
+    public ResponseEntity<List<PostDiscoverResponse>> getByTags(
+            @RequestBody @Validated LabelsRequest lisTags
+    ){
+        return ResponseEntity.ok(this.postDiscoverService.findByTags(lisTags));
+
+    }
+    @GetMapping(path = "/AllTags")
+    public ResponseEntity<List<String>> getALLTags(
+    ){
+        return ResponseEntity.ok(this.postDiscoverService.getTags());
+
+    }
+
 }

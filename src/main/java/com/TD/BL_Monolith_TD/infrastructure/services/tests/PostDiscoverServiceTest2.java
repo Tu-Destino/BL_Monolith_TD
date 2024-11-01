@@ -105,4 +105,9 @@ public class PostDiscoverServiceTest2 implements IPostDiscoverService {
     public void delete(String string) {
 
     }
+
+    @Override
+    public List<String> getTags() {
+        return null;
+    }
 }

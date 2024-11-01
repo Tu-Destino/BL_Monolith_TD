@@ -187,4 +187,20 @@ public class PostDiscoverService implements IPostDiscoverService {
             current.remove(current.size() - 1);
         }
     }
+
+    @Override
+    public List<String> getTags() {
+        List<String> listFull = this.postDiscoverRepository.findAllTags();
+        List<String> listLabel = new ArrayList<>();
+        listFull.forEach(label -> {
+            String[] tags = label.split(",");
+            Arrays.stream(tags).forEach(tag -> {
+                if (!listLabel.contains(tag)) {
+                    listLabel.add(tag);
+                }
+            });
+        });
+
+        return  listLabel;
+    }
 }

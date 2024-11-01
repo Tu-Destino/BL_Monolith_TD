@@ -13,6 +13,7 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
 import java.util.List;
 
 
@@ -88,5 +89,14 @@ public class PlaceService implements IPlaceService {
     @Override
     public PlaceResponse findByPlaceName(String placeName) {
         return this.placeMapper.toResponse(this.placeRepository.findByTitle(placeName));
+    }
+    @Override
+    public List<PlaceResponse> CreateList(List<PlaceRequest> requests){
+        List<PlaceResponse> responses = new ArrayList<>();
+
+        requests.forEach(placeRequest -> {
+            responses.add(this.create(placeRequest));
+        });
+        return  responses;
     }
 }

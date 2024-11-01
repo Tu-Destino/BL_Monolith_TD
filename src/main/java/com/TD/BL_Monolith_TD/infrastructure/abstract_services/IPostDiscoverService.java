@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface IPostDiscoverService extends CrudService<PostDiscoverRequest, PostDiscoverResponse,String> {
     List<PostDiscoverResponse> findByTags(LabelsRequest labelsRequest);
+    List<String> getTags();
 }

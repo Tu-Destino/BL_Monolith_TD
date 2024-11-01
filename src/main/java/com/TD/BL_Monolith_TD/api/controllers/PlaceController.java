@@ -185,6 +185,10 @@ public class PlaceController {
     ){
         return ResponseEntity.ok(this.placeService.update(id,place));
     }
-
-
+    @PostMapping(path = "/list")
+    public ResponseEntity<List<PlaceResponse>> insertList(
+            @Validated @RequestBody List<PlaceRequest> places
+    ){
+        return ResponseEntity.ok(this.placeService.CreateList(places));
+    }
 }

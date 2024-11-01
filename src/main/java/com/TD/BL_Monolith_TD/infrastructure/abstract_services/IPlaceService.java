@@ -4,7 +4,10 @@ import com.TD.BL_Monolith_TD.api.dto.requests.PlaceRequest;
 import com.TD.BL_Monolith_TD.api.dto.response.PlaceResponse;
 import com.TD.BL_Monolith_TD.api.dto.response.SearchListPlaceResponse;
 
+import java.util.List;
+
 public interface IPlaceService extends CrudService<PlaceRequest, PlaceResponse, Long> {
     SearchListPlaceResponse getListNamePlace();
     PlaceResponse findByPlaceName(String placeName);
+    List<PlaceResponse> CreateList(List<PlaceRequest> requests);
 }
