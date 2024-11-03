@@ -7,7 +7,8 @@ import com.TD.BL_Monolith_TD.api.dto.response.SearchListPlaceResponse;
 import java.util.List;
 
 public interface IPlaceService extends CrudService<PlaceRequest, PlaceResponse, Long> {
-    SearchListPlaceResponse getListNamePlace();
+    List<String> getListNamePlace();
     PlaceResponse findByPlaceName(String placeName);
     List<PlaceResponse> CreateList(List<PlaceRequest> requests);
+    Long getIdByTitle(String title );
 }

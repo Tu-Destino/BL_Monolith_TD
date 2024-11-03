@@ -79,8 +79,8 @@ public class PlaceService implements IPlaceService {
      * Retrieves a list of all place names from the repository and returns them wrapped in a SearchListPlaceResponse.
      */
     @Override
-    public SearchListPlaceResponse getListNamePlace() {
-        return new SearchListPlaceResponse(this.placeRepository.findAllTitles());
+    public List<String> getListNamePlace() {
+        return this.placeRepository.findAllTitles();
     }
 
     /**
@@ -98,5 +98,10 @@ public class PlaceService implements IPlaceService {
             responses.add(this.create(placeRequest));
         });
         return  responses;
+    }
+
+    @Override
+    public Long getIdByTitle(String title) {
+        return this.placeRepository.findIdByTitle(title);
     }
 }

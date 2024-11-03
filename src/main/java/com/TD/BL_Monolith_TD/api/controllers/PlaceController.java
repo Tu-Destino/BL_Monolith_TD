@@ -108,8 +108,8 @@ public class PlaceController {
             @ApiResponse(responseCode = "500", description = "Internal server error",
                     content = @Content)
     })
-    @GetMapping(path = "/listTitle")
-    public ResponseEntity<SearchListPlaceResponse> getListTitle(){
+    @GetMapping(path = "/getListTitle")
+    public ResponseEntity<List<String>> getListTitle(){
         return ResponseEntity.ok(this.placeService.getListNamePlace());
     }
 
@@ -190,5 +190,12 @@ public class PlaceController {
             @Validated @RequestBody List<PlaceRequest> places
     ){
         return ResponseEntity.ok(this.placeService.CreateList(places));
+    }
+
+    @GetMapping(path = "/getIdByTitle/{title}")
+    public ResponseEntity<Long> getIDByTitle(
+            @PathVariable String title
+    ){
+        return ResponseEntity.ok(this.placeService.getIdByTitle(title));
     }
 }

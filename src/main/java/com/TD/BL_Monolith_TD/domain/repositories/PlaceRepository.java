@@ -12,7 +12,8 @@ public interface PlaceRepository extends JpaRepository<Place,Long> {
     @Query("SELECT p.title FROM place p")
     List<String> findAllTitles();
 
-
-
     Place findByTitle( String placeName);
+
+    @Query("SELECT p.id FROM place p WHERE p.title LIKE ?1")
+    Long findIdByTitle(String title);
 }
