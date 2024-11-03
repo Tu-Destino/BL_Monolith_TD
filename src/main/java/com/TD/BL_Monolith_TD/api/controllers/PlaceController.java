@@ -108,7 +108,7 @@ public class PlaceController {
             @ApiResponse(responseCode = "500", description = "Internal server error",
                     content = @Content)
     })
-    @GetMapping(path = "/getLmvn istTitle")
+    @GetMapping(path = "/getListTitle")
     public ResponseEntity<List<String>> getListTitle(){
         return ResponseEntity.ok(this.placeService.getListNamePlace());
     }
