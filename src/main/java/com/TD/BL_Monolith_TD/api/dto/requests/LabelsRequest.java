@@ -14,6 +14,25 @@ import lombok.Setter;
 public class LabelsRequest {
 
     @NotNull
-    @WWcomma(message = "Words in the String must be separated by commas ", words = {"lugares","historia","antiguo","cultura","naturaleza"})
+    @WWcomma(message = "Words in the String must be separated by commas ", words = {
+            "Historia",
+            "Cultura",
+            "Arte",
+            "Monumento",
+            "Lugares",
+            "Diseño Arquitectónico",
+            "Gastronomía",
+            "Restaurante",
+            "Actividades",
+            "Museo",
+            "Parque",
+            "Antiguo",
+            "Hospedajes",
+            "Lujo",
+            "Naturaleza",
+            "Montaña",
+            "Mirador",
+            "Bosque",
+            "Jardín"})
     private String array;
 }

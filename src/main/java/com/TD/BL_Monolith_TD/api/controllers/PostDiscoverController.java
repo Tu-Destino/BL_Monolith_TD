@@ -152,7 +152,7 @@ public class PostDiscoverController {
         return  ResponseEntity.ok(this.postDiscoverService.update(id,postDiscoverRequest));
     }
 
-    @GetMapping(path = "/tags")
+    @PostMapping(path = "/tags")
     public ResponseEntity<List<PostDiscoverResponse>> getByTags(
             @RequestBody @Validated LabelsRequest lisTags
     ){
