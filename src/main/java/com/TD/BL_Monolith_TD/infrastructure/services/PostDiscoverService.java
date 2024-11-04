@@ -23,6 +23,7 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @AllArgsConstructor
@@ -117,7 +118,7 @@ public class PostDiscoverService implements IPostDiscoverService {
     public List<PostDiscoverResponse> findByTags(LabelsRequest labelsRequest) {
         String tagsString = labelsRequest.getArray();
         String[] tagsArray = tagsString.split(",");
-        List<String> tags = Arrays.stream(tagsArray).map(String::trim).toList();
+        List<String> tags = Arrays.stream(tagsArray).map(String::trim).collect(Collectors.toList());
 
         // Dynamic search
         StringBuilder jpql = new StringBuilder("SELECT p, ");
@@ -142,7 +143,7 @@ public class PostDiscoverService implements IPostDiscoverService {
                 jpql.append(") THEN ").append(matchCount).append(" ");
             }
         }
-        jpql.append("ELSE 0 END) as relevance FROM PostDiscover p WHERE ");
+        jpql.append("ELSE 0 END) as relevance FROM postDiscover p WHERE ");
         // Condition for at least one match
         jpql.append("(");
         for (int i = 0; i < tags.size(); i++) {
