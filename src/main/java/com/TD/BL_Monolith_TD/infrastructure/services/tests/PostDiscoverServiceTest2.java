@@ -110,4 +110,10 @@ public class PostDiscoverServiceTest2 implements IPostDiscoverService {
     public List<String> getTags() {
         return null;
     }
+
+    @Override
+    public List<String> getUrlImgByTitle(String title) {
+        return null;
+    }
+
 }

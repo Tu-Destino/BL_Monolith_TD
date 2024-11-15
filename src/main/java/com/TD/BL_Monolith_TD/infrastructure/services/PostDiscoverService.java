@@ -204,4 +204,9 @@ public class PostDiscoverService implements IPostDiscoverService {
 
         return  listLabel;
     }
+
+    @Override
+    public List<String> getUrlImgByTitle(String title) {
+        return this.postDiscoverRepository.findAllUrlImgOrderByUserId(title,"0d215f49-a3f4-4165-bf52-b42649bc85c3");
+    }
 }

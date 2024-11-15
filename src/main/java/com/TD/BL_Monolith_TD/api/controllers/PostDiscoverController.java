@@ -163,7 +163,11 @@ public class PostDiscoverController {
     public ResponseEntity<List<String>> getALLTags(
     ){
         return ResponseEntity.ok(this.postDiscoverService.getTags());
+    }
 
+    @GetMapping(path = "/getUrlImg/{title}")
+    public ResponseEntity<List<String>> getUrlImgByTitle(@PathVariable String title){
+        return ResponseEntity.ok(this.postDiscoverService.getUrlImgByTitle(title));
     }
 
 }

@@ -111,4 +111,9 @@ public class PostDiscoverServiceTest1 implements IPostDiscoverService {
     public List<String> getTags() {
         return null;
     }
+
+    @Override
+    public List<String> getUrlImgByTitle(String title) {
+        return null;
+    }
 }

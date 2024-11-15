@@ -11,4 +11,7 @@ import java.util.List;
 public interface PostDiscoverRepository extends JpaRepository<PostDiscover,String> {
     @Query("SELECT p.tags FROM postDiscover p")
     List<String> findAllTags();
+
+    @Query("SELECT p.urlImg FROM postDiscover p WHERE p.title = :title ORDER BY CASE WHEN p.user.id = :userId THEN 0 ELSE 1 END, p.user.id")
+    List<String> findAllUrlImgOrderByUserId(String title,  String userId) ;
 }
