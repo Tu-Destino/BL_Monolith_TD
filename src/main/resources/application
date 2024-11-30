@@ -1,0 +1,32 @@
+# Nombre de la aplicacion
+spring.application.name=BL_Monolith_TD
+
+# Ruta global
+server.servlet.context-path=/TD/api/v1
+
+
+# Activar el perfil de desarrollo o produccion
+spring.profiles.active=prod
+
+# Configuraciones adicionales (si es necesario)
+spring.datasource.url=jdbc:mysql://host.docker.internal:3306/TD_Data
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=TD_Root
+spring.datasource.password=TuDestino24.
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.show-sql=true
+spring.jpa.properties.hibernate.enable_lazy_load_no_trans=true
+spring.cache.type=redis
+spring.redis.host=172.17.0.1
+spring.redis.port=6379
+spring.cache.redis.cache-null-values=true
+spring.cache.redis.time-to-live=600000
+spring.cache.redis.key-prefix=cache:
+spring.cache.redis.use-key-prefix=true
+
+
+# Habilita las tareas programadas
+spring.task.scheduling.pool.size=10
+
+
+server.port=8080
