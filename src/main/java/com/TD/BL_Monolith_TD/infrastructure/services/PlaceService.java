@@ -11,6 +11,7 @@ import com.TD.BL_Monolith_TD.infrastructure.helpers.mappers.PlaceMapper;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -53,6 +54,7 @@ public class PlaceService implements IPlaceService {
     /**
      * Retrieves all Place entities from the repository and maps them to a list of PlaceResponse.
      */
+    @Cacheable("placeList")
     @Override
     public List<PlaceResponse> getAll() {
         return this.placeMapper.toListResponse(this.placeRepository.findAll());
@@ -78,6 +80,7 @@ public class PlaceService implements IPlaceService {
     /**
      * Retrieves a list of all place names from the repository and returns them wrapped in a SearchListPlaceResponse.
      */
+    @Cacheable("titleList")
     @Override
     public List<String> getListNamePlace() {
         return this.placeRepository.findAllTitles();

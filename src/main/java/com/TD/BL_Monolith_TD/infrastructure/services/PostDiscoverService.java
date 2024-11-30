@@ -18,6 +18,7 @@ import jakarta.persistence.Query;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
@@ -88,6 +89,7 @@ public class PostDiscoverService implements IPostDiscoverService {
     /**
      * Retrieves all PostDiscover entities from the repository and maps them to a list of PostDiscoverResponse.
      */
+    @Cacheable("postList")
     @Override
     public List<PostDiscoverResponse> getAll() {
         return this.postDiscoverMapper.toListResponse(this.postDiscoverRepository.findAll());
