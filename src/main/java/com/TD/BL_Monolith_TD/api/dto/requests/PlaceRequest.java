@@ -37,7 +37,7 @@ public class PlaceRequest {
     private String address;
 
     @Size(max = 500, message = "You exceeded the number of characters allowed (100)")
-    private String link_address;
+    private String coordinates;
 
     @Size(max = 1000, message = "You exceeded the number of characters allowed (1000)")
     private String vr;

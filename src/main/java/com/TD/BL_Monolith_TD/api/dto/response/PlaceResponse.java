@@ -21,7 +21,7 @@ public class PlaceResponse implements Serializable {
     private String price;
     private String schedule;
     private String address;
-    private String link_address;
+    private String coordinates;
     private String vr;
     private String web;
     private String phone;

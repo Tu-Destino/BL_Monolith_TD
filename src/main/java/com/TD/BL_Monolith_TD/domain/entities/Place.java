@@ -34,7 +34,7 @@ public class Place implements Serializable {
     @Column(length = 100,nullable = false)
     private String address;
     @Column(length = 500)
-    private String link_address;
+    private String coordinates;
     @Column(length = 1000)
     private String vr;
     @Column(length = 120)
