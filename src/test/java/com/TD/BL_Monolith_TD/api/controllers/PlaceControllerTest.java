@@ -48,7 +48,7 @@ public class PlaceControllerTest {
         place1.setPrice("Free");
         place1.setSchedule("Always open");
         place1.setAddress("123 Main St");
-        place1.setLink_address("http://placeone.com");
+        place1.setCoordinates("http://placeone.com");
         place1.setVr("http://placeone-vr.com");
         place1.setWeb("http://placeone-web.com");
         place1.setPhone("555-1234");
@@ -64,7 +64,7 @@ public class PlaceControllerTest {
         place2.setPrice("Free");
         place2.setSchedule("Always open");
         place2.setAddress("456 Another St");
-        place2.setLink_address("http://placetwo.com");
+        place2.setCoordinates("http://placetwo.com");
         place2.setVr("http://placetwo-vr.com");
         place2.setWeb("http://placetwo-web.com");
         place2.setPhone("555-5678");
@@ -134,7 +134,7 @@ public class PlaceControllerTest {
         placeRequest.setPrice("100 USD");
         placeRequest.setSchedule("9 AM - 5 PM");
         placeRequest.setAddress("123 Test Street");
-        placeRequest.setLink_address("http://testlink.com");
+        placeRequest.setCoordinates("http://testlink.com");
         placeRequest.setVr("http://vrlink.com");
         placeRequest.setWeb("http://weblink.com");
         placeRequest.setPhone("123-456-7890");
@@ -168,7 +168,7 @@ public class PlaceControllerTest {
         placeRequest.setPrice("150 USD");
         placeRequest.setSchedule("10 AM - 6 PM");
         placeRequest.setAddress("456 Updated Street");
-        placeRequest.setLink_address("http://updatedlink.com");
+        placeRequest.setCoordinates("http://updatedlink.com");
         placeRequest.setVr("http://updated-vr.com");
         placeRequest.setWeb("http://updated-web.com");
         placeRequest.setPhone("987-654-3210"); placeRequest.setRate(4.7);
@@ -195,7 +195,7 @@ public class PlaceControllerTest {
         placeRequest1.setPrice("Free");
         placeRequest1.setSchedule("Always open");
         placeRequest1.setAddress("123 Main St");
-        placeRequest1.setLink_address("http://placeone.com");
+        placeRequest1.setCoordinates("http://placeone.com");
         placeRequest1.setVr("http://placeone-vr.com");
         placeRequest1.setWeb("http://placeone-web.com");
         placeRequest1.setPhone("555-1234");
@@ -211,7 +211,7 @@ public class PlaceControllerTest {
     placeRequest2.setPrice("Free");
     placeRequest2.setSchedule("Always open");
     placeRequest2.setAddress("456 Another St");
-    placeRequest2.setLink_address("http://placetwo.com");
+    placeRequest2.setCoordinates("http://placetwo.com");
     placeRequest2.setVr("http://placetwo-vr.com");
     placeRequest2.setWeb("http://placetwo-web.com");
     placeRequest2.setPhone("555-5678");

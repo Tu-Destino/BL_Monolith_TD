@@ -52,7 +52,7 @@ public class PlaceServiceTest {
         request.setPrice("$5.200 - $23.000");
         request.setSchedule("8 AM - 6 PM");
         request.setAddress("Via a Piedras Blancas, Medellín, Antioquia");
-        request.setLink_address("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
+        request.setCoordinates("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
         request.setVr("https://www.google.com/maps/@6.2814291,-75.5026375");
         request.setWeb("https://www.parquearvi.org/");
         request.setPhone("(604) 4442979");
@@ -67,7 +67,7 @@ public class PlaceServiceTest {
         place.setPrice("$5.200 - $23.000");
         place.setSchedule("8 AM - 6 PM");
         place.setAddress("Via a Piedras Blancas, Medellín, Antioquia");
-        place.setLink_address("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
+        place.setCoordinates("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
         place.setVr("https://www.google.com/maps/@6.2814291,-75.5026375");
         place.setWeb("https://www.parquearvi.org/");
         place.setPhone("(604) 4442979");
@@ -83,7 +83,7 @@ public class PlaceServiceTest {
         savedPlace.setPrice("$5.200 - $23.000");
         savedPlace.setSchedule("8 AM - 6 PM");
         savedPlace.setAddress("Via a Piedras Blancas, Medellín, Antioquia");
-        savedPlace.setLink_address("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
+        savedPlace.setCoordinates("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
         savedPlace.setVr("https://www.google.com/maps/@6.2814291,-75.5026375");
         savedPlace.setWeb("https://www.parquearvi.org/");
         savedPlace.setPhone("(604) 4442979");
@@ -99,7 +99,7 @@ public class PlaceServiceTest {
         placeResponse.setPrice("$5.200 - $23.000");
         placeResponse.setSchedule("8 AM - 6 PM");
         placeResponse.setAddress("Via a Piedras Blancas, Medellín, Antioquia");
-        placeResponse.setLink_address("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
+        placeResponse.setCoordinates("https://maps.app.goo.gl/wHo7Dnnh4mj9EkcJA");
         placeResponse.setVr("https://www.google.com/maps/@6.2814291,-75.5026375");
         placeResponse.setWeb("https://www.parquearvi.org/");
         placeResponse.setPhone("(604) 4442979");
