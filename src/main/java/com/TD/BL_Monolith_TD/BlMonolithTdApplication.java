@@ -7,8 +7,8 @@ import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguratio
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
-@EnableCaching
-@EnableScheduling
+//@EnableCaching
+//@EnableScheduling
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
 public class BlMonolithTdApplication {
 
